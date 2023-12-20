@@ -3,7 +3,9 @@
     "description": "Pactice managing kubernetes nodes using kubeadm",
     "details": {
       "intro": {
-        "text": "intro.md"
+        "title": "Intro",
+        "text": "intro.md",
+        "background": "intro/setup.sh"
       },
       "steps": [
         {
