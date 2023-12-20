@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 ls /tmp/cpu.txt
-LINES_1=$(cat /tmp/cpu.txt | egrep "campaign1" | wc -l)
-LINES_2=$(cat /tmp/cpu.txt | egrep "campaign2" | wc -l)
-LINES_3=$(cat /tmp/cpu.txt | egrep "campaign3" | wc -l)
+LINES_1=$(cat /tmp/cpu.txt | egrep "hr1" | wc -l)
+LINES_2=$(cat /tmp/cpu.txt | egrep "hr2" | wc -l)
+LINES_3=$(cat /tmp/cpu.txt | egrep "hr3" | wc -l)
 LINES_4=$(cat /tmp/cpu.txt | egrep "Mi" | wc -l)
 LINES_5=$(cat /tmp/cpu.txt | egrep "CPU" | wc -l)
 

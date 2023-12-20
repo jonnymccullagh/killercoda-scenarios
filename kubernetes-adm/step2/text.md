@@ -6,7 +6,7 @@ HR have asked if you can get a list of their pods ordered by CPU usage and place
   <summary>Tip</summary>
   <p>
   <code>
-  kubectl top -n hr --sort-by=cpu > /tmp/cpu.txt
+  kubectl top pod -n hr --sort-by=cpu > /tmp/cpu.txt
   </code>
   </p>
 </details>
