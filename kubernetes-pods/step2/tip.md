@@ -1,0 +1,5 @@
+
+
+```
+kubectl delete pod campaign
+```
