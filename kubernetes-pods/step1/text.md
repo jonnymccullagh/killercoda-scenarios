@@ -6,14 +6,14 @@ Run a pod named `campaign` using the `nginx:alpine` image.
 <details>
   <summary>Tip</summary>
   <p>
-  Use the `kubectl run` command. Read the help with `kubectl run --help`
+  Use the <code>kubectl run</code> command. Read the help with <code>kubectl run --help</code>
   </p>
 </details>
 <details>
   <summary>Answer</summary>
   <p>
-  ```
-  kubectl run campaign --image=nginx:alpine
-  ```
+    <code>
+    kubectl run campaign --image=nginx:alpine
+    </code>
   </p>
 </details>

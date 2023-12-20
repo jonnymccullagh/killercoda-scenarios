@@ -1,2 +1,3 @@
+You reached the end of the kubernetes deployments scenario.
 
-Finished
+Consider undertaking the kubernetes deployments scenario next. 
