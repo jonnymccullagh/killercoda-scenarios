@@ -7,7 +7,7 @@ LINES_3=$(cat /tmp/cpu.txt | egrep "hr3" | wc -l)
 LINES_4=$(cat /tmp/cpu.txt | egrep "Mi" | wc -l)
 LINES_5=$(cat /tmp/cpu.txt | egrep "CPU" | wc -l)
 
-if [[ $LINES_1 -eq 1 ]] && [[ $LINES_2 -eq 1 ]] && [[ $LINES_3 -eq 1 ]] && [[ $LINES_4 -eq 1 ]] && [[ $LINES_5 -eq 1 ]]; then
+if [[ $LINES_1 -eq 1 ]] && [[ $LINES_2 -eq 1 ]] && [[ $LINES_3 -eq 1 ]] && [[ $LINES_4 -eq 3 ]] && [[ $LINES_5 -eq 1 ]]; then
   echo "File exists with expected content"
   exit 0
 else
