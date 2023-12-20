@@ -7,19 +7,24 @@
       },
       "steps": [
         {
-          "title": "Create a pod",
+          "title": "Create a Pod",
           "text": "step1/text.md",
           "verify": "step1/verify.sh"
         },
         {
-          "title": "Delete a pod",
+          "title": "Delete a Pod",
           "text": "step2/text.md",
           "verify": "step2/verify.sh"
         },
         {
-          "title": "Create a pod with labels",
+          "title": "Create a Pod with Labels",
           "text": "step3/text.md",
           "verify": "step3/verify.sh"
+        },
+        {
+          "title": "Create a Static Pod",
+          "text": "step4/text.md",
+          "verify": "step4/verify.sh"
         }
       ],
       "finish": {
