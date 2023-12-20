@@ -1,5 +1,5 @@
 Welcome !
 
-In this scenario you will find an existing kubernetes deployment. The marketing team have notified the company that an advertising campaign could see an influx of traffic and you have been tasked with increasing the number of replicas in the deployment. 
+The marketing team have been in contact. They have notified the company that an advertising campaign could see an influx of traffic and you have been tasked with managing the deployment. 
 
 Have fun!

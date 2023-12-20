@@ -1,18 +1,18 @@
 {
     "title": "Kubernetes Deployments",
-    "description": "Pactice managing kubernetes deployments using kubectl",
+    "description": "Pactice managing kubernetes nodes using kubeadm",
     "details": {
       "intro": {
         "text": "intro.md"
       },
       "steps": [
         {
-          "title": "Create a Deployment",
+          "title": "Fix the Cluster",
           "text": "step1/text.md",
           "verify": "step1/verify.sh"
         },
         {
-          "title": "Scale a Deployment",
+          "title": "Save metrics info to a file",
           "text": "step2/text.md",
           "verify": "step2/verify.sh"
         }
@@ -22,6 +22,6 @@
       }
     },
     "backend": {
-      "imageid": "kubernetes-kubeadm-1node"
+        "imageid": "kubernetes-kubeadm-2nodes"
     }
   }
