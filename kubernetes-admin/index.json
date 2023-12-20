@@ -14,9 +14,24 @@
           "verify": "step1/verify.sh"
         },
         {
-          "title": "Save metrics info to a file",
+          "title": "Install the Metrics Server",
           "text": "step2/text.md",
           "verify": "step2/verify.sh"
+        },
+        {
+          "title": "Save metrics info to a file",
+          "text": "step3/text.md",
+          "verify": "step3/verify.sh"
+        },
+        {
+          "title": "Upgrade Node",
+          "text": "step4/text.md",
+          "verify": "step4/verify.sh"
+        },
+        {
+          "title": "Backup etcd",
+          "text": "step5/text.md",
+          "verify": "step5/verify.sh"
         }
       ],
       "finish": {
