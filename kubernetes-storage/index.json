@@ -9,14 +9,24 @@
       },
       "steps": [
         {
-          "title": "Create a Persistent Volume",
+          "title": "1. Create a Persistent Volume",
           "text": "step1/text.md",
           "verify": "step1/verify.sh"
         },
         {
-          "title": "Add Volume to Pod",
+          "title": "2. Create a Persistent Volume Claim",
           "text": "step2/text.md",
           "verify": "step2/verify.sh"
+        },
+        {
+          "title": "3. Add Volume to Pod",
+          "text": "step3/text.md",
+          "verify": "step3/verify.sh"
+        },
+        {
+          "title": "4. Expand the Volume",
+          "text": "step4/text.md",
+          "verify": "step4/verify.sh"
         }
       ],
       "finish": {

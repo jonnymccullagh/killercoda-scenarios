@@ -7,7 +7,7 @@ Official Docs [here](https://kubernetes.io/docs/tasks/configure-pod-container/co
 <details>
   <summary>Solution</summary>
 <p>Create pod.yaml with: 
-  <code>
+  <pre>
 apiVersion: v1
 kind: Pod
 metadata:
@@ -23,7 +23,7 @@ spec:
       volumeMounts:
         - mountPath: "/var/redis"
           name: hr-data
-  </code>
+  </pre>
 and apply with:
 <code>
 kubectl apply -f pod.yaml

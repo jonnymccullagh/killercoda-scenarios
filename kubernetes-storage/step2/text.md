@@ -7,7 +7,7 @@ Official Docs [here](https://kubernetes.io/docs/tasks/configure-pod-container/co
   <summary>Solution</summary>
   
 <p>Create pvc.yaml with: 
-  <code>
+  <pre>
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -19,7 +19,7 @@ spec:
   resources:
     requests:
       storage: 100Mi
-  </code>
+  </pre>
 and apply with:
 <code>
 kubectl apply -f pvc.yaml

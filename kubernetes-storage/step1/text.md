@@ -12,7 +12,7 @@ Official Docs [here](https://kubernetes.io/docs/tasks/configure-pod-container/co
 <details>
   <summary>Solution</summary>
   <p>Create pv.yaml with: 
-  <code>
+  <pre>
 apiVersion: v1
 kind: PersistentVolume
 metadata:
@@ -27,7 +27,7 @@ spec:
     - ReadWriteOnce
   hostPath:
     path: "/mnt/data"
-  </code>
+  </pre>
 and apply with:
 <code>
 kubectl apply -f pv.yaml
