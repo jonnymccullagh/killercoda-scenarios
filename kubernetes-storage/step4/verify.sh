@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-kubectl get pv hr-pv
+kubectl get pods

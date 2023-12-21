@@ -3,6 +3,8 @@ Run a pod named `campaign` using the `nginx:alpine` image.
 - Name: campaign
 - Image: nginx:alpine
 
+<sub>Question 1 of 4</sub>
+
 <details>
   <summary>Tip</summary>
   <p>

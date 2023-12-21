@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-kubectl get pods
+kubectl get pvc hr-pvc
+
