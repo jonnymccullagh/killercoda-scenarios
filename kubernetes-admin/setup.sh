@@ -7,7 +7,8 @@ kubectl run hr3 -n hr --image=busybox --restart=Never -- watch lscpu
 sleep 1
 
 # Break the Controller Manager
-sed -i 's#registry.k8s.io/kube-controller-manager:v1.28.1#registry.k8s.io/kube-controller-maaaaaanager:v1.28.1#' /etc/kubernetes/manifests/kube-controller-manager.yaml
+KUBE_VERSION=$(kubectl version | grep Server | awk '{print $3}')
+sed -i 's#registry.k8s.io/kube-controller-manager:$KUBE_VERSION#registry.k8s.io/kube-controller-maaaaaanager:$KUBE_VERSION#' /etc/kubernetes/manifests/kube-controller-manager.yaml
 sleep 3
 kubectl create namespace marketing
 kubectl create deployment -n marketing campaign --image=nginx:alpine --replicas=3

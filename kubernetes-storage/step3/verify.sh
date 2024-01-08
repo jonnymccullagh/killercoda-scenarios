@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
 
-kubectl get pv hr-pv
-kubectl get pvc hr-pvc
+kubectl get pod hr-web
 
-LINES=$(kubectl describe pv hr-pv | grep "200Mi" | wc -l)
-LINES_2=$(kubectl describe pvc hr-pvc | grep "200Mi"  | wc -l )
-
-# check the history for the --record 
+LINES=$(kubectl describe pod hr-web | grep -A4 "Mounts:" | grep "/var/redis" | wc -l)
 
 if [[ $LINES -eq 1 ]] && [[ $LINES_2 -eq 1 ]] ; then
   echo "OK: Changes found"
