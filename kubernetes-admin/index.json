@@ -1,5 +1,5 @@
 {
-    "title": "Kubernetes Nodes",
+    "title": "K4. Kubernetes Nodes",
     "description": "Pactice managing kubernetes nodes using kubeadm",
     "details": {
       "intro": {
