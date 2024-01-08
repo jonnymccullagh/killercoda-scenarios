@@ -1,6 +1,7 @@
 
 HR have contacted us again saying they need more storage space.
-Use `kubectl edit` or `kubectl patch` to expand the storage to a capacity of 2000Mi
+Use `kubectl edit` or `kubectl patch` to expand the storage to a capacity of `200Mi`.<br>
+Record the change.
 
 <sub>Question 4 of 4</sub>
 <details>
