@@ -4,9 +4,7 @@ PODS_AVAILABLE=$(kubectl describe deployment campaign | egrep "^Replicas" | sed 
 PODS_DESIRED=$(kubectl describe deployment campaign| egrep "^Replicas" | sed 's/Replicas://' | awk -F"|" '{print $1}' | awk '{print $1}')
 
 if [[ $PODS_DESIRED -eq 3 ]] && [[ $PODS_AVAILABLE -eq 3 ]]; then
-  echo "done"
   exit 0
 else
-  echo "not done"
   exit 1
 fi
