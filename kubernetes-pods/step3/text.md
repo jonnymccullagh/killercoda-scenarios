@@ -5,8 +5,6 @@ Run a `notifications` pod using the `redis:alpine` image with labels `tier=cache
 - Label: tier=cache
 - Label: release=stable
 
-s
-
 <details>
   <summary>Tip</summary>
   <p>

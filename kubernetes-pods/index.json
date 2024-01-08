@@ -1,5 +1,5 @@
 {
-    "title": "Kubernetes Pods",
+    "title": "K1. Kubernetes Pods",
     "description": "Pactice managing kubernetes pods using kubectl",
     "details": {
       "intro": {

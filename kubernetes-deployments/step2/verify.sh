@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
 
-PODS_AVAILABLE=$(kubectl describe deployment campaign | egrep "^Replicas" | sed 's/Replicas://' | awk -F"|" '{print $4}' | awk '{print $1}')
-PODS_DESIRED=$(kubectl describe deployment campaign| egrep "^Replicas" | sed 's/Replicas://' | awk -F"|" '{print $1}' | awk '{print $1}')
-
-if [[ $PODS_DESIRED -eq 3 ]] && [[ $PODS_AVAILABLE -eq 3 ]]; then
-  echo "done"
-  exit 0
-else
-  echo "not done"
-  exit 1
-fi
+kubectl get sa pod-reader -n hr
+kubectl get clusterrole -n hr pod-reader-role
+kubectl get clusterrolebinding -n hr pod-reader-role-binding
